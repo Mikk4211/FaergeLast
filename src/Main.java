@@ -7,11 +7,11 @@ public class Main {
         System.out.println(truck.loadWeight);*/
         VehicleGenerator vehicleGenerator = new VehicleGenerator();
         System.out.println(vehicleGenerator.vehicleGenerator(100));
-        Car car1 = new Car(200);
-        Car car2 = new Car(6000);
+        Car car1 = new Car(600);
+        Car car2 = new Car(600);
 
-        System.out.println(car2.compareTo(car1));
-
+        System.out.println(car1.compareTo(car2));
+        System.out.println(car2.vehicleWeight);
     }
 
 
