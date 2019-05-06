@@ -2,11 +2,11 @@ import java.util.ArrayList;
 
 public class VehicleGenerator {
 
-    public ArrayList<Vehicle> vehicleGenerator() {
+    public ArrayList<Vehicle> vehicleGenerator(int antalBiler) {
         // Lav forloop der genererer vehicles og ligger dem i et array
         ArrayList<Vehicle> vehicles = new ArrayList<Vehicle>();
 
-        for (int i = 0; i < 50; i++) {
+        for (int i = 0; i < antalBiler; i++) {
             // Finder et tal mellem 1 og 100, for at kunne generere tilfældige antal vehicles efter %.
             int rand = (int) (Math.random() * 100) + 1;
 
@@ -29,7 +29,7 @@ public class VehicleGenerator {
                 vehicles.add(tempTruckNoLoad);
             }
         }
-        // Returnerer vehicles arrayet. 
+        // Returnerer vehicles arrayet.
         return vehicles;
     }
 }

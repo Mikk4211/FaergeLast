@@ -20,6 +20,6 @@ public class Truck extends Vehicle {
 
     @Override
     public String toString() {
-        return "Truck Load Weight: " +loadWeight;
+        return "Truck Weight: " +loadWeight;
     }
 }

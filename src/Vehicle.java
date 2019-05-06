@@ -1,4 +1,4 @@
-public abstract class Vehicle implements Comparable {
+public abstract class Vehicle implements Comparable<Object> {
 
     int vehicleWeight;
 
@@ -13,6 +13,20 @@ public abstract class Vehicle implements Comparable {
     public abstract String toString();
 
     // Metode fra Comparable, denne bruges til at sammenligne objecter.
+
+    @Override
+    public int compareTo(Vehicle vehicle) {
+        if (this.vehicleWeight > vehicle.vehicleWeight){
+            return 1;
+        }
+        else if (this.vehicleWeight < vehicle.vehicleWeight){
+            return -1;
+        }
+        else {
+            return 0;
+        }
+    }
+
     @Override
     public int compareTo(Object o) {
         return 0;
