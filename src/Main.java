@@ -1,4 +1,4 @@
-public class Main {
+public class Main{
 
     public static void main(String[] args) {
         /*Car car = new Car(860);
@@ -12,7 +12,4 @@ public class Main {
 
         System.out.println(car1.compareTo(car2));
         System.out.println(car2.vehicleWeight);
-    }
-
-
-}
+    }}
